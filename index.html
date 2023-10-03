@@ -4,7 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>password generator</title>
-    <script src="./js/main.js" type="text/javascript" async></script>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        background-color: aliceblue;
+        overflow: hidden;
+      }
+
+      span {
+        font-size: 1.2rem;
+      }
+      button {
+        padding: 10px 25px;
+        border: 0px solid;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: cadetblue;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 500px;
+        text-align: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>Ciao, clicca il bottone per generare una password stupida!</h1>
+    <div>
+      <span>La tua password è: </span><span id="generatedPassword"></span>
+    </div>
+    <button onclick="passwordGenerator()">Click me</button>
+    <script src="./js/main.js" type="text/javascript"></script>
+  </body>
 </html>

@@ -9,4 +9,21 @@
 //     - Utilizzare il metodo math random
 //     - Assegnarlo ad una variabile
 // - #### Stampa i risultati sulla pagina
-//     - Concatenare i valori e stamparli
+//     - Concatenare i valori e stamparli tramite una funzione
+
+"use strict;";
+
+let generatedPassword = document.getElementById("generatedPassword");
+
+function numbersGenerator(maxNumbers) {
+  return Math.floor(Math.random() * maxNumbers);
+}
+
+function passwordGenerator() {
+  let name = prompt("Ciao, Inserisci il tuo nome:");
+  let surname = prompt("Inserisci il tuo cognome:");
+  let favoriteColor = prompt("Inserisci il tuo colore preferito:");
+  let randomNumbers = numbersGenerator(999);
+  return (generatedPassword.innerHTML =
+    name + surname + favoriteColor + randomNumbers);
+}

@@ -10,4 +10,4 @@
   - Utilizzare il metodo math random
   - Assegnarlo ad una variabile
 - #### Stampa i risultati sulla pagina
-  - Concatenare i valori e stamparli
+  - Concatenare i valori e stamparli tramite una funzione
