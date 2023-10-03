@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+span {
+  font-size: 1.2rem;
+  text-align: center;
+}
+button {
+  padding: 10px 25px;
+  border: 0px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 500px;
+  text-align: center;
+}
